@@ -19,7 +19,7 @@ export type ReportingProp = {
   };
 };
 
-/*export const Reporting = async (props: ReportingProp) => {
+export const Reporting = async (props: ReportingProp) => {
   let _pageNumber = Number(props.searchParams.pageNumber ?? 0);
   let pageSize = Number(props.searchParams.pageSize ?? 5);
   let pageNumber = _pageNumber < 0 ? 0 : _pageNumber;
@@ -34,7 +34,8 @@ export type ReportingProp = {
   const hasMoreResults = chatThreads && chatThreads.length === pageSize;
 
   return (
-    <Card className="h-full flex pt-8 overflow-y-auto">
+    <h2 className="text-2xl font-bold tracking-tight">Chat Reporting</h2>
+    /*<Card className="h-full flex pt-8 overflow-y-auto">
       <div className="container mx-auto max-w-5xl space-y-8">
         <div>
           <h2 className="text-2xl font-bold tracking-tight">Chat Reporting</h2>
@@ -98,6 +99,6 @@ export type ReportingProp = {
           </Card>
         </div>
       </div>
-    </Card>
+    </Card>*/
   );
-};*/
+};
